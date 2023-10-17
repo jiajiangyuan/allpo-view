@@ -97,30 +97,30 @@ export const routes: RoutesType[] = [
       // },
       {
         path: "/draggable",
-        label: "在线签署",
+        label: "DocuSign",
         element: <Draggable />,
       },
-      {
-        path: "/threeJs",
-        label: "3D楼书",
-        children: [
-          {
-            path: "/threeJs/home",
-            label: "home",
-            element: <ThreeRender />,
-          },
-          {
-            path: "/threeJs/gltf",
-            label: "gltf",
-            element: <ThreeGltfRender />,
-          },
-          {
-            path: "/threeJs/bufferGeometry",
-            label: "BufferGeometry",
-            element: <BufferGeometry />,
-          },
-        ],
-      },
+      // {
+      //   path: "/threeJs",
+      //   label: "3D楼书",
+      //   children: [
+      //     {
+      //       path: "/threeJs/home",
+      //       label: "home",
+      //       element: <ThreeRender />,
+      //     },
+      //     {
+      //       path: "/threeJs/gltf",
+      //       label: "gltf",
+      //       element: <ThreeGltfRender />,
+      //     },
+      //     {
+      //       path: "/threeJs/bufferGeometry",
+      //       label: "BufferGeometry",
+      //       element: <BufferGeometry />,
+      //     },
+      //   ],
+      // },
     ],
   },
   {
