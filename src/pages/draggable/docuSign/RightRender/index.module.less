@@ -1,0 +1,56 @@
+
+.right{
+  width: 595px;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  padding: 10px 0;
+  margin: 10px 0;
+  background: #eeeeee;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  .dragView{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #646cff;
+  }
+  .page{
+    margin-bottom: 20px;
+  }
+
+  .rnd{
+    background: rgba(255, 214, 91, 0.75);
+    z-index: 2;
+    border: 1px solid rgb(184, 134, 11);
+    border-radius: 3px;
+
+  }
+
+  .rndAction{
+    border: 3px solid rgb(36, 99, 209);
+  }
+
+  .text{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+  }
+
+  .editText{
+    border: none;
+    //min-width: 100px;
+    height: 50px;
+    padding: 5px 10px;
+    //background: #ffffff;
+  }
+  .editText:focus-visible {
+    outline: -webkit-focus-ring-color auto 0;
+  }
+}

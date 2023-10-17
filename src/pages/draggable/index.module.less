@@ -1,0 +1,54 @@
+.view{
+  width: 100%;
+  height: 100%;
+  //background: #eeeeee;
+  overflow: hidden;
+
+  .content{
+    background: white;
+    margin-top: 20px;
+  }
+
+  .top{
+    border: 1px solid rgba(25, 24, 35, 0.15);
+    display: flex;
+    flex-direction: row;
+    min-height: 41px;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    position: relative;
+    padding: 8px 0px;
+    background: #ffffff;
+  }
+
+  .draggableView{
+    background: #ffffff;
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+    .box{
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 3px;
+      width: 180px;
+      height: 180px;
+      margin: 10px;
+      padding: 10px;
+      float: left;
+
+    }
+  }
+  .example{
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+}
