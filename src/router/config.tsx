@@ -2,10 +2,6 @@ import React, { lazy } from "react";
 import { UserOutlined } from "@ant-design/icons";
 
 const Layouts = lazy(() => import("@/layouts/index")); // 公共页容器
-const Home = lazy(() => import("@/pages/Home")); // 首页
-const Login = lazy(() => import("@/pages/Login")); // 登录
-const BlogList = lazy(() => import("@/pages/Blogs/BlogList")); // 博客列表
-const ChatGPT = lazy(() => import("@/pages/chatGPT/index")); // 博客列表
 const Draggable = lazy(() => import("@/pages/draggable/index")); // 在线签署
 const ThreeRender = lazy(() => import("@/pages/ThreeRender/index")); // 3d楼书
 const ThreeGltfRender = lazy(
@@ -36,65 +32,6 @@ export const routes: RoutesType[] = [
         from: "/",
         to: "/draggable",
       },
-      // {
-      //   label: "首页",
-      //   path: "/home",
-      //   element: <Home />,
-      // },
-      // {
-      //   label: "chatGPT",
-      //   path: "/chatGPT",
-      //   element: <ChatGPT />,
-      // },
-      // {
-      //   label: "博客",
-      //   path: "/blog",
-      //   children: [
-      //     {
-      //       path: "/blog/list",
-      //       label: "博客列表",
-      //       element: <BlogList />,
-      //     },
-      //   ],
-      // },
-      // {
-      //   path: "/vue",
-      //   label: "Vue",
-      //   children: [
-      //     {
-      //       path: "/vue/home",
-      //       label: "Vue-home",
-      //     },
-      //     {
-      //       path: "/vue/profile",
-      //       label: "与主页面通信",
-      //     },
-      //   ],
-      // },
-      // {
-      //   path: "/vue-ts",
-      //   label: "Vue-Ts",
-      //   children: [
-      //     {
-      //       path: "/vue-ts/vue-home",
-      //       label: "vue-ts-home",
-      //     },
-      //   ],
-      // },
-      // {
-      //   path: "/react-app",
-      //   label: "react-app",
-      //   children: [
-      //     {
-      //       path: "/react-app/home",
-      //       label: "react-app",
-      //     },
-      //   ],
-      // },
-      // {
-      //   path: "/allpo-agent-app/app",
-      //   label: "allpo-agent-app",
-      // },
       {
         path: "/draggable",
         label: "DocuSign",
@@ -122,12 +59,6 @@ export const routes: RoutesType[] = [
       //   ],
       // },
     ],
-  },
-  {
-    path: "/login",
-    label: "登录",
-    element: <Login />,
-    hideMenu: true,
   },
   {
     path: "/404",
