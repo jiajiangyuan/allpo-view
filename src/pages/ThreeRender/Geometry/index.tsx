@@ -73,6 +73,7 @@ const ThreeRender = () => {
         console.log(camera);
 
         gltf.scene.traverse(function (obj) {
+          // @ts-ignore
           if (obj.isMesh) {
             // console.log(obj.material);
             // if (obj.material.metalness === 0) {
